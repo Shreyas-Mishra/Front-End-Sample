@@ -1,0 +1,53 @@
+.bootstrap-dark {
+  background-color: #292929; }
+  .bootstrap-dark .fa {
+    color: #f15156; }
+  .bootstrap-dark .navbar {
+    background-color: #292929; }
+    .bootstrap-dark .navbar .navbar-nav .nav-link {
+      color: #f6f4e6; }
+    .bootstrap-dark .navbar .navbar-nav .nav-link:hover {
+      color: #f15156; }
+    .bootstrap-dark .navbar .nav-item::after {
+      background: #f6f4e6; }
+    .bootstrap-dark .navbar .nav-item:hover::after {
+      width: 100%; }
+    .bootstrap-dark .navbar .navbar .navbar-nav .active::after {
+      background: #f6f4e6 !important;
+      color: #f15156 !important; }
+    .bootstrap-dark .navbar .navbar-nav .active > .nav-link {
+      color: #f15156; }
+    .bootstrap-dark .navbar .fa:hover {
+      color: #f6f4e6; }
+    .bootstrap-dark .navbar .custom-control-label {
+      color: #f6f4e6; }
+  .bootstrap-dark .carousel-control-next:hover .fa,
+  .bootstrap-dark .carousel-control-prev:hover .fa {
+    color: white; }
+  .bootstrap-dark .card:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.932); }
+  .bootstrap-dark .mid-cap p {
+    color: #f6f4e6; }
+  .bootstrap-dark .mid-gal {
+    color: #f6f4e6; }
+    .bootstrap-dark .mid-gal img {
+      width: 100%; }
+  .bootstrap-dark .look-better {
+    background-color: #f6f4e6;
+    color: #292929; }
+  .bootstrap-dark .plans h4 {
+    color: #f6f4e6; }
+  .bootstrap-dark .plans .card {
+    background-color: #f6f4e6;
+    color: #292929; }
+    .bootstrap-dark .plans .card fa {
+      color: #292929; }
+  .bootstrap-dark footer {
+    color: #f6f4e6; }
+    .bootstrap-dark footer hr {
+      border-top: 1px solid #f6f4e6; }
+    .bootstrap-dark footer li a {
+      color: #f6f4e6; }
+    .bootstrap-dark footer li a:hover {
+      color: #f15156;
+      text-decoration: none; }

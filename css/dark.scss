@@ -1,0 +1,88 @@
+$base-color: #f15156;
+$dark-color: #292929;
+$light-color: #f6f4e6;
+.bootstrap-dark {
+  background-color: $dark-color;
+  .fa {
+    color: $base-color;
+  }
+  .navbar {
+    .navbar-nav .nav-link {
+      color: $light-color;
+    }
+    .navbar-nav .nav-link:hover {
+      color: $base-color;
+    }
+    background-color: $dark-color;
+
+    .nav-item::after {
+      background: $light-color;
+    }
+    .nav-item:hover::after {
+      width: 100%;
+    }
+    .navbar .navbar-nav .active::after {
+      background: $light-color !important;
+      color: $base-color !important;
+    }
+    .navbar-nav .active > .nav-link {
+      color: $base-color;
+    }
+    .fa:hover {
+      color: $light-color;
+    }
+    .custom-control-label {
+      color: $light-color;
+    }
+  }
+
+  .carousel-control-next:hover .fa,
+  .carousel-control-prev:hover .fa {
+    color: white;
+  }
+  .card:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.932);
+  }
+  .mid-cap {
+    p {
+      color: $light-color;
+    }
+  }
+  .mid-gal {
+    color: $light-color;
+    img {
+      width: 100%;
+    }
+  }
+  .look-better {
+    background-color: $light-color;
+    color: $dark-color;
+  }
+
+  .plans {
+    h4 {
+      color: $light-color;
+    }
+    .card {
+      background-color: $light-color;
+      color: $dark-color;
+      fa {
+        color: $dark-color;
+      }
+    }
+  }
+  footer {
+    hr {
+      border-top: 1px solid $light-color;
+    }
+    color: $light-color;
+    li a {
+      color: $light-color;
+    }
+
+    li a:hover {
+      color: $base-color;
+      text-decoration: none;
+    }
+  }
+}

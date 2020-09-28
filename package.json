@@ -1,0 +1,38 @@
+{
+  "name": "website-exercise",
+  "version": "1.0.0",
+  "description": "Website Design Practice",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run watch:all",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass -o css/ css/",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shreyas-Mishra/Website-Exercise.git"
+  },
+  "author": "Shreyas Mishra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shreyas-Mishra/Website-Exercise/issues"
+  },
+  "homepage": "https://github.com/Shreyas-Mishra/Website-Exercise#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.14.1",
+    "onchange": "^3.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "bootstrap-social": "^5.1.1",
+    "dark-mode-switch": "^1.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "parallelshell": "^3.0.1",
+    "popper.js": "^1.12.9"
+  }
+}
