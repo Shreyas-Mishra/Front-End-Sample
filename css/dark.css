@@ -24,6 +24,8 @@
   .bootstrap-dark .carousel-control-next:hover .fa,
   .bootstrap-dark .carousel-control-prev:hover .fa {
     color: white; }
+  .bootstrap-dark .card {
+    background: none; }
   .bootstrap-dark .card:hover {
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.932); }
   .bootstrap-dark .mid-cap p {

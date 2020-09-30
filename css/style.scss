@@ -8,6 +8,7 @@ $Monster: "Montserrat", sans-serif;
   color: $base-color;
 }
 body {
+  // overflow: hidden;
   // background-color: #e5e5e5;
   color: $dark-color;
   padding-top: 4rem;
@@ -65,71 +66,73 @@ body {
 // Carousel SCSS DO  NOT TOUCH
 // Carousel SCSS DO  NOT TOUCH
 // Carousel SCSS DO  NOT TOUCH
-$fragment_width: 20%;
-.carousel {
-  .carousel-caption {
-    font-family: $Monster;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    font-size: 4.7vw;
-    top: 12%;
-    font-weight: 600;
-    // line-height: 1;
+.bd-example {
+  $fragment_width: 20%;
+  .carousel {
+    .carousel-caption {
+      font-family: $Monster;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      font-size: 4.7vw;
+      top: 12%;
+      font-weight: 600;
+      // line-height: 1;
+    }
+    .carousel-indicators .active {
+      opacity: 1;
+      background-color: $base-color;
+    }
+    .carousel-indicators li {
+      border-radius: 50px;
+      box-sizing: content-box;
+      width: 8px;
+      height: 8px;
+      margin-right: 5px;
+      margin-left: 5px;
+      border-top: transparent;
+      border-bottom: transparent;
+    }
+    .fa {
+      font-size: 85px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      color: $base-color;
+      opacity: 1;
+      z-index: 30;
+    }
+    .carousel-control-next:hover,
+    .carousel-control-prev:hover {
+      color: white;
+    }
   }
-  .carousel-indicators .active {
-    opacity: 1;
-    background-color: $base-color;
-  }
-  .carousel-indicators li {
-    border-radius: 50px;
-    box-sizing: content-box;
-    width: 8px;
-    height: 8px;
-    margin-right: 5px;
-    margin-left: 5px;
-    border-top: transparent;
-    border-bottom: transparent;
-  }
-  .fa {
-    font-size: 85px;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    color: $base-color;
-    opacity: 1;
-    z-index: 30;
-  }
-  .carousel-control-next:hover,
-  .carousel-control-prev:hover {
-    color: white;
-  }
-}
-.show-neighbors {
-  overflow: hidden;
-  .carousel-indicators {
-    margin-right: $fragment_width;
-    margin-left: $fragment_width;
-  }
-  .carousel-inner {
-    width: (100% - 2 * $fragment_width) * 3;
-    left: 3 * $fragment_width - 100%;
-  }
-  .carousel-item-next:not(.carousel-item-left),
-  .carousel-item-right.active {
-    -webkit-transform: translate3d(33%, 0, 0);
-    transform: translate3d(33%, 0, 0);
-  }
-  .carousel-item-prev:not(.carousel-item-right),
-  .carousel-item-left.active {
-    -webkit-transform: translate3d(-33%, 0, 0);
-    transform: translate3d(-33%, 0, 0);
-  }
-  .item__third {
-    float: left;
-    position: relative; /* captions can now be added */
-    width: 33.33333333%;
+  .show-neighbors {
+    overflow: hidden;
+    .carousel-indicators {
+      margin-right: $fragment_width;
+      margin-left: $fragment_width;
+    }
+    .carousel-inner {
+      width: (100% - 2 * $fragment_width) * 3;
+      left: 3 * $fragment_width - 100%;
+    }
+    .carousel-item-next:not(.carousel-item-left),
+    .carousel-item-right.active {
+      -webkit-transform: translate3d(33%, 0, 0);
+      transform: translate3d(33%, 0, 0);
+    }
+    .carousel-item-prev:not(.carousel-item-right),
+    .carousel-item-left.active {
+      -webkit-transform: translate3d(-33%, 0, 0);
+      transform: translate3d(-33%, 0, 0);
+    }
+    .item__third {
+      float: left;
+      position: relative; /* captions can now be added */
+      width: 33.33333333%;
+    }
   }
 }
 // Carousel SCSS DO  NOT TOUCH
@@ -160,12 +163,7 @@ $fragment_width: 20%;
     border: none;
     transition: 0.4s ease-in;
     margin-bottom: 4rem;
-    background: rgb(196, 196, 196);
-    background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(65, 68, 75, 1) 80%
-    );
+
     img {
       border-radius: 10%;
       transition: 0.4s ease-in;
@@ -175,6 +173,13 @@ $fragment_width: 20%;
     }
   }
   .card:hover {
+    z-index: 5;
+    background: rgb(196, 196, 196);
+    background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(65, 68, 75, 1) 80%
+    );
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: scale(1.2);
   }
@@ -251,6 +256,7 @@ $fragment_width: 20%;
 
 .mid-gal {
   .row {
+    overflow: hidden;
     margin-right: 0px;
     margin-left: 0px;
   }
