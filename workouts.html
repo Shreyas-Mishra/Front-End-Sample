@@ -8,17 +8,15 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <!-- build:css css/main.css -->
+
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
-    <link rel="stylesheet" href="./css/monster-font">
-    <link rel="stylesheet" href="./css/roboto-font">
     <link rel="stylesheet" href="./css/dark.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/aos.css">
-    <!-- endbuild -->
-    <title>E3</title>
+
+    <title>Document</title>
 </head>
 
 <body class="bootstrap-dark ">
@@ -29,7 +27,7 @@
         <a href="index.html" class="navbar-brand mr-auto"><img id="nav-logo" src="img/logo.png"></a>
         <div class="collapse navbar-collapse" id="Navbar">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item "><a class="nav-link" href="./workouts.html"> Workouts</a></li>
+                <li class="nav-item active"><a class="nav-link" href="#"> Workouts</a></li>
                 <li class="nav-item "><a class="nav-link" href="#"> Programs</a></li>
                 <li class="nav-item "><a class="nav-link" href="#"> Challenges</a></li>
                 <li class="nav-item "><a class="nav-link" href="#"> Personal Training</a></li>
@@ -54,8 +52,7 @@
                 <a id="nav-search">
                     <span class="fa fa-shopping-cart" aria-hidden="true"></span>
                 </a>
-
-
+                <script src="./js/dark-mode-switch.js"></script>
             </span>
         </div>
     </nav>
@@ -504,16 +501,43 @@
 
 
 
+
+
+
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-    <script src="./js/dark-mode-switch.js"></script>
-    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="./js/aos.js"></script>
-    <script src="./js/carousel.js"></script>
-    <script src="./js/aos-init.js"></script>
-    <!-- endbuild -->
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 3000
+            })
+            $('.carousel-item', '.show-neighbors').each(function () {
+                var next = $(this).next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+                next.children(':first-child').clone().appendTo($(this));
+            }).each(function () {
+                var prev = $(this).prev();
+                if (!prev.length) {
+                    prev = $(this).siblings(':last');
+                }
+                prev.children(':nth-last-child(2)').clone().prependTo($(this));
+            });
+        });
+    </script>
+
 </body>
 
 </html>
