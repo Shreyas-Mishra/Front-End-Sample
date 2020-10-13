@@ -226,6 +226,10 @@ body {
     font-weight: 100;
     font-family: "Monsteratte", sans-serif; }
 
+.mid-gal img {
+  width: 100%;
+  height: 100%; }
+
 .look-better {
   font-weight: 400;
   padding-top: 3rem;
@@ -318,9 +322,15 @@ footer li a:hover {
   text-decoration: none; }
 
 .end {
+  height: 2.5rem;
+  font-size: 20px;
   text-align: center;
   background-color: grey;
   color: white; }
+  .end a {
+    color: #f6f4e6; }
+  .end a:hover {
+    color: #f15156; }
 
 @media only screen and (max-width: 799px) {
   .btn {
