@@ -3,12 +3,8 @@
 1.	Install NPM & Node.js
 https://nodejs.org
 Verify Syntax: 
-<!-- Required meta tags always come first -->
 node -v 
-<!-- Required meta tags always come first -->
-<!-- Required meta tags always come first -->
 npm -v
-<!-- Required meta tags always come first -->
 2.	Initialize package.json
 	Syntax: <!-- Required meta tags always come first -->npm init<!-- Required meta tags always come first -->
 	NOTE : Enter default values for most except entry point set it to index.html 
