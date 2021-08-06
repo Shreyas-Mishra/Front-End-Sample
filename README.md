@@ -11,7 +11,8 @@ npm -v
 	NOTE : Enter default values for most except entry point set it to index.html 
 <br>
 3.	Install Lite Server
-	Syntax:<!-- Required meta tags always come first --> npm install lite-server --save-dev<!-- Required meta tags always come first -->
+	Syntax: npm install lite-server --save-dev
+<br>
 4.	Modify package.json file 
 Syntax: 
 "scripts": {
@@ -19,12 +20,14 @@ Syntax:
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
+<br>
 5.	Put node_modules in a folder named .gitignore
+<br>
 
 6.	Download Bootstrap to Your Project
 Syntax: npm install bootstrap@4.0.0 --save
 npm install jquery@3.3.1 popper.js@1.12.9 --save
-
+<br>
 7.	Put the following meta tags on every page 
 	<!-- Required meta tags always come first -->
     	<meta charset="utf-8">
