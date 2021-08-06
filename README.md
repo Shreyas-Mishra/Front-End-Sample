@@ -5,9 +5,11 @@ https://nodejs.org
 Verify Syntax: 
 node -v 
 npm -v
+<br>
 2.	Initialize package.json
-	Syntax: <!-- Required meta tags always come first -->npm init<!-- Required meta tags always come first -->
+	Syntax: npm init
 	NOTE : Enter default values for most except entry point set it to index.html 
+<br>
 3.	Install Lite Server
 	Syntax:<!-- Required meta tags always come first --> npm install lite-server --save-dev<!-- Required meta tags always come first -->
 4.	Modify package.json file 
