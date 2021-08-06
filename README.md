@@ -2,13 +2,13 @@
 <h2>Steps to Start</h2>
 1.	Install NPM & Node.js
 https://nodejs.org
-Verify Syntax:  node -v 
-npm -v
+Verify Syntax:  <!-- Required meta tags always come first -->node -v <!-- Required meta tags always come first -->
+<!-- Required meta tags always come first -->npm -v<!-- Required meta tags always come first -->
 2.	Initialize package.json
-	Syntax: npm init
+	Syntax: <!-- Required meta tags always come first -->npm init<!-- Required meta tags always come first -->
 	NOTE : Enter default values for most except entry point set it to index.html 
 3.	Install Lite Server
-	Syntax: npm install lite-server --save-dev
+	Syntax:<!-- Required meta tags always come first --> npm install lite-server --save-dev<!-- Required meta tags always come first -->
 4.	Modify package.json file 
 Syntax: 
 "scripts": {
