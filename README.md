@@ -27,8 +27,6 @@ npm install jquery@3.3.1 popper.js@1.12.9 --save
     	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     	<meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    	<!-- Bootstrap CSS -->
     	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 Place these tags  just before the body end tag
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
