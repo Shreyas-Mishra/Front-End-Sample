@@ -1,53 +1,56 @@
 # Bootstrap-Sample-Project
 <h2>Steps to Start</h2>
 1.	Install NPM & Node.js
-https://nodejs.org
+```https://nodejs.org```
 Verify Syntax: 
-node -v 
-npm -v
+```npm -v```
 <br>
 2.	Initialize package.json
-	Syntax: npm init
+	Syntax: ```npm init```
 	NOTE : Enter default values for most except entry point set it to index.html 
 <br>
 3.	Install Lite Server
-	Syntax: npm install lite-server --save-dev
+	Syntax: ```npm install lite-server --save-dev```
 <br>
 4.	Modify package.json file 
-Syntax: 
+Syntax:
+```
 "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
+ ```
 <br>
 5.	Put node_modules in a folder named .gitignore
 <br>
 6.	Download Bootstrap to Your Project
-Syntax: npm install bootstrap@4.0.0 --save
-npm install jquery@3.3.1 popper.js@1.12.9 --save
+Syntax: ```npm install bootstrap@4.0.0 --save```
+```npm install jquery@3.3.1 popper.js@1.12.9 --save```
 <br>
 7.	Put the following meta tags on every page 
-	<!-- Required meta tags always come first -->
+	```
     	<meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     	<meta http-equiv="x-ua-compatible" content="ie=edge">
-
     	<!-- Bootstrap CSS -->
     	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	```
 Place these tags  just before the body end tag
+```
     <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   ```
 <br>
 8.	Install the following to implement Font-awesome & bootstrap-social
-npm install font-awesome@4.7.0 --save
-npm install bootstrap-social@5.1.1 --save
+	``` npm install font-awesome@4.7.0 --save```
+	```npm install bootstrap-social@5.1.1 --save```
 
 
-<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+	```<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">```
+	```<link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">```
 <br>
 9.	Using SCSS(SASS) 
 npm install --save-dev node-sass@4.7.2
