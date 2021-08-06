@@ -1,5 +1,5 @@
 # Bootstrap-Sample-Project
-##Steps to Start
+<h2>Steps to Start</h2>
 1.	Install NPM & Node.js
 https://nodejs.org
 Verify Syntax:  node -v 
