@@ -23,7 +23,6 @@ Syntax:
 <br>
 5.	Put node_modules in a folder named .gitignore
 <br>
-
 6.	Download Bootstrap to Your Project
 Syntax: npm install bootstrap@4.0.0 --save
 npm install jquery@3.3.1 popper.js@1.12.9 --save
