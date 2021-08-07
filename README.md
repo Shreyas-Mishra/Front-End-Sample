@@ -1,6 +1,6 @@
 # Bootstrap-Sample-Work
 
-Hosted at [Cliack Here.](http://fgethell.xyz/zeus/shreyas/)
+Hosted at [Click Here.](http://fgethell.xyz/zeus/shreyas/)
 
 ## Steps to Start
 
